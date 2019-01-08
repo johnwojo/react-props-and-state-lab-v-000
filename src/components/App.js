@@ -15,6 +15,27 @@ class App extends React.Component {
     }
   }
 
+  onChangeType = (event) => {
+    this.setState({
+      filters: { ...this.state.filters,
+       type: event.target.value }
+    })
+
+    fetchPets = () => {
+      let endpoint = 'api/pets'
+      let petType
+
+    }
+
+  }
+
+
+
+
+
+
+
+
   render() {
     return (
       <div className="ui container">
